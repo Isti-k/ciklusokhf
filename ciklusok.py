@@ -20,11 +20,13 @@ def feladat3():
 
 def feladat4():
     cv: int = 0
-    while(cv <= 53):
-        if cv % 3 == 0:
-            print(f"BUMM", end="; ")
+    while(cv <= 5):
+        if cv % 3 == 0 and cv % 2 == 0:
+            print(f"BUMMBAM", end="; ")
         elif cv % 2 == 0:
+            print(f"BAM", end="; ")
+        elif cv % 3 == 0:
             print(f"BUMM", end="; ")
-        elif cv:
-            print(f"{cv}", end="")
+        else:
+            print(f"{cv}", end="; ")
         cv += 1
